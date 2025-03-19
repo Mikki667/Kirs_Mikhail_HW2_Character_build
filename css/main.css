@@ -1,0 +1,141 @@
+/* Utility Classes */
+.hidden {
+  display: none;
+}
+/* General Styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+/* Main Header */
+header {
+  background-color: rgb(17, 69, 2);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#main-logo {
+  text-align: center;
+  width: 240px;
+  display: block;
+  margin: 0 auto;
+  background-color: #0a350fca;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 5);
+}
+
+/* Main Character Nav */
+#character-nav {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url("../images/Season5Cast.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #6e8714;
+  background-blend-mode: multiply;
+}
+#Characters {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+#Characters li {
+  display: inline;
+  margin: 10px;
+}
+#Characters li img {
+  padding: 10px;
+  border: solid 1px #1b5d1b;
+  background-color: #000;
+  box-shadow: 0px 0px 10px 0px #1b5d1b;
+  transition: all 0.2s ease-in-out;
+}
+#Characters li img:hover {
+  filter: blur(1px) grayscale(100%);
+  border-radius: 50%;
+}
+#Characters li a {
+  text-decoration: none;
+}
+/* Instructions */
+#instructions h3 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+#instructions p {
+  font-size: 18px;
+  text-align: center;
+}
+/* footer */
+#main-footer {
+  color: #fff;
+  text-align: center;
+  height: 80px;
+  background-color: rgb(40, 37, 37);
+  padding: 20px 0 20px 0;
+}
+/* LightBox */
+.lightbox {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 1;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+.lightbox:target {
+  display: block;
+}
+
+#lightbox1 {
+  background-image: url("../images/ww.png");
+  background-size: 65vh;
+  background-position: 40px bottom;
+}
+
+#lightbox2 {
+  background-image: url("../images/jp.png");
+  background-size: 86vh;
+  background-position: 50px bottom;
+}
+#lightbox3 {
+  background-image: url("../images/sg.png");
+  background-size: 100vh;
+  background-position: 10px bottom;
+}
+#lightbox4 {
+  background-image: url("../images/mk.png");
+  background-size: 95vh;
+  background-position: 40px bottom;
+}
+#lightbox5 {
+  background-image: url("../images/hs.png");
+  background-size: 75vh;
+  background-position: 40px bottom;
+}
+.lightbox-close {
+  margin-left: 90%;
+  color: #fff;
+  font-size: 45px;
+  text-decoration: none;
+}
+.lightbox article {
+  margin-left: 40%;
+  margin-top: 50px;
+  width: 600px;
+}
+
+.lb-heading {
+  font-size: 32px;
+}
+.lb-text {
+  line-height: 24px;
+}
